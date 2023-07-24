@@ -85,6 +85,10 @@ i {
   font-size: 2.2em;
 }
 
+a>i:hover {
+  transform: scale(1.1);
+}
+
 a:hover {
   color: #9e73ee;
   box-shadow: 0 0 15px rgb(163, 81, 236);
