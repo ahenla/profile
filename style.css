@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Rubik:wght@300;400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #c6c6d3;
+  text-align: center;
+  font-family: Rubik, sans-serif;
+}
+
+.card {
+  width: 70%;
+  padding: 1em;
+  margin: 1.2em auto;
+  background-color: #07070cfc;
+  border: 1px solid #423359fc;
+  border-radius: 7px;
+}
+
+.profile {
+  margin-top: 1em;
+}
+
+.img-circle {
+  width: 20%;
+  margin: 1em;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #F2F4F4;
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.3em;
+
+}
+
+.fa-code {
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.9em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0.5em 1em;
+  padding: 0.1em 2em;
+  line-height: 1.3em;
+}
+
+.enjoy-div>span {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+ul {
+  margin: 0 auto;
+  margin-left: -2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul>li {
+  list-style-type: none;
+  margin: 0.5em 3em;
+}
+
+a {
+  text-decoration: none;
+  font-family: Rubik;
+  color: rgb(199, 177, 209);
+  font-size: 1.2em;
+  border: 0;
+}
+
+i {
+  font-size: 2.5em;
+}
+
+a:hover {
+  color: #9e73ee;
+  box-shadow: 0 0 15px rgb(163, 81, 236);
+}
+
+@media (max-width: 960px) {
+
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
