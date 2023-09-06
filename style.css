@@ -5,9 +5,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #000000;
-  color: #c6c6d3;
+  color: #a9a9b0;
   text-align: center;
   font-family: Rubik, sans-serif;
+  box-sizing: border-box;
 }
 
 .card {
@@ -80,8 +81,71 @@ a {
   border: 0;
 }
 
+.project-cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-card{
+  width: 45%;
+  padding: 0.5em;
+  margin: 0.2em;
+  background-color: #07070cfc;
+  border: 1px solid #423359fc;
+  border-radius: 7px;
+  position: relative;
+}
+
+.project-card img{
+  width: 100%;
+}
+.project-card p{
+  font-size: 14px;
+  padding-bottom: 0.5em;
+}
+.project-card h3{
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 auto
+}
+.project-card a{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+}
+
+.rails{
+  background-color: #F2F4F4;
+  background-image: url(icons/ruby_on_rails.png);
+  background-size: cover;
+}
+.postgresql{
+  background-color: #F2F4F4;
+  background-image: url(icons/postgresql.png);
+  background-size: cover;
+}
+
+.stack{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+}
+.stack i{
+  font-size: 1.5em;
+}
+
 i {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 a:hover {
@@ -89,12 +153,16 @@ a:hover {
   box-shadow: 0 0 15px rgb(163, 81, 236);
 }
 
+
+
 @media (max-width: 960px) {
 
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
   }
+
+
 }
 
 @media (max-width: 720px) {
@@ -103,6 +171,10 @@ a:hover {
   .container {
     width: 500px;
   }
+
+  .project-card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -110,5 +182,9 @@ a:hover {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+
+  .project-card{
+    width: 100%;
   }
 }
