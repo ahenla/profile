@@ -29,6 +29,7 @@ body {
   margin: 1em;
   border-radius: 50%;
   box-shadow: 1px 1px 10px #F2F4F4;
+  min-width: 150px;
 }
 
 h1 {
@@ -182,6 +183,27 @@ a:hover {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+    padding: 5px;
+  }
+
+  .card p{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  p{
+    padding: 0.3em;
+  }
+
+  ul{
+    flex-wrap: nowrap;
   }
 
   .project-card{
