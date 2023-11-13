@@ -280,3 +280,9 @@ a:hover {
     height: 200px;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .img-container {
+    max-height: 100vh;
+  }
+}
